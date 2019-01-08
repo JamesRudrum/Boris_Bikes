@@ -1,7 +1,5 @@
 require 'docking_station'
 
 describe DockingStation do
-  # it 'describes a DockingStation' do
-  #   expect(describe_station()).to eq []
-  # end
+  it { is_expected.to respond_with release_bike }
 end
