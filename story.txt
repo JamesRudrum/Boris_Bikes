@@ -1,0 +1,24 @@
+-------------------------------------------
+Extracting a domain model from user stories
+-------------------------------------------
+nouns = person
+        bike
+        docking station
+
+verbs = release
+        working
+
+-------------------------------------------
+Objects:              Messages:
+-------------------------------------------
+person                (person = user)
+bike                  working?
+docking_station       release
+
+
+-------------------------------------------
+Diagram:
+-------------------------------------------
+
+bike <-- to_work? --> true/false
+docking_station <-- release --> bike
