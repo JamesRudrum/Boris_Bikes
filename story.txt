@@ -11,14 +11,14 @@ verbs = release
 -------------------------------------------
 Objects:              Messages:
 -------------------------------------------
-person                (person = user)
-bike                  working?
-docking_station       release
+Person                (person = user)
+Bike                  working?
+DockingStation        release
 
 
 -------------------------------------------
 Diagram:
 -------------------------------------------
 
-bike <-- to_work? --> true/false
-docking_station <-- release --> bike
+Bike <-- to_work? --> true/false
+DockingStation <-- release --> Bike
