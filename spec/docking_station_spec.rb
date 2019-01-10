@@ -8,9 +8,16 @@ describe DockingStation do
           bike = Bike.new
           expect(subject.dock(bike)).to eq bike
         end
-          it "return bike" do
-            bike = Bike.new
-            subject.dock(bike)
-            expect(subject.bike).to eq bike
-        end
+
+describe '#release_bike' do
+  it "return bike" do
+    bike = Bike.new
+    subject.dock(bike)
+    expect(subject.bike).to eq bike
+    end
+
+  it "raises an eror when no bikes" do
+        expect { subject.release_bike }.to raise_error 'No bikes available'
+    end
+  end
 end
