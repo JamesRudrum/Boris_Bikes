@@ -1,3 +1,5 @@
+require_relative 'bike'
+
 class DockingStation
 
   attr_reader :bike
@@ -8,6 +10,7 @@ class DockingStation
   end
 
   def dock(bike)
+    fail 'Capacity full' if @bike
     @bike = bike
   end
 
